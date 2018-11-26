@@ -1,0 +1,12 @@
+{
+    "development": {
+        "postgres": {
+            "url": "postgres://user:password@host:5432/db"
+          }
+    },
+    "production" : {
+        "postgres": {
+            "url": "Heroku DB"
+          }
+    }
+}

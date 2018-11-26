@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, CRM on Heroku Demo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <header class="header">
+        <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="./assets/images/sf_logo.png" alt="SALES FORCE" height="28">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__head section">
+            <div class="container">
+                <h1 class="title">Hello, CRM on Heroku</h1>
+                <h2 class="subtitle">CRM on Heroku Demoページへようこそ</h2>
+            </div>
+        </div>
+        <section class="section article-list">
+            <article class="post" v-for="article in articles" :key="article.id">
+                <h1 class="post__title title is-4">{{article.name}}</h1>
+                <div class="post__body" v-html="article.detail__c">
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Heroku Connect Demo</strong> by <a href="https://neopa.jp/">Neopa</a>. The source code is licensed
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

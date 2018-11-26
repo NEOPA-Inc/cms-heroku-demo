@@ -1,0 +1,32 @@
+$widthM: 1024px;
+$borderColor: #f4f4f4;
+
+.article-list {
+  max-width:$widthM;
+  margin:0 auto;
+  .post {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom:1px solid $borderColor;
+  }
+}
+.main {
+  &__head {
+    padding:2rem 1rem;
+    background-color: $link;
+    .container {
+      max-width: $widthM;
+      margin:0 auto;
+      display: block;
+    }
+    .title, .subtitle {
+      color: $white;
+    }
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
