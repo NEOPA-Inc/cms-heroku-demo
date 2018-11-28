@@ -6,7 +6,7 @@
     },
     "production" : {
         "postgres": {
-            "url": "Heroku DB"
+            "url": "Herokuでは環境変数を参照するため設定不要"
           }
     }
 }
