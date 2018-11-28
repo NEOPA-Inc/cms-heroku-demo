@@ -41,7 +41,7 @@ $ heroku git:remote -a <app name>
 $ git push heroku master
 ```
 
-5. Herokuアプリにアクセスする
+5. Herokuアプリにアクセスする  
 Salesforceの`お知らせ`オブジェクトにコンテンツを登録すると、即座にWebアプリ側に反映されます。
 
 ## ライセンス
