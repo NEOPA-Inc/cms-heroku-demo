@@ -2,14 +2,14 @@ CMS on Heroku Demo app
 ====
 
 ## 概要
-SalesforceをCMSの管理画面として利用するデモアプリです。
+SalesforceをCMSの管理画面として利用するデモアプリです。
 
 記事やニュースなどのWebコンテンツがHeroku上で稼働するWebサイトに即座に反映される仕組みです。
 コンテンツの管理はすべてSalesforceで行います。
 
 ## 必要な環境
 
-- Salesforce環境
+- Salesforce環境
 - Herokuアカウント
 
 ## セットアップ方法
@@ -23,7 +23,7 @@ https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000005EqKj
 
 >注: Sandbox 組織にインストールする場合は、URL の最初の部分を http://test.salesforce.com に置き換える必要があります。
 
-2. Herokuにアプリを作成して、`Heroku Postgres`と`Heroku connect`をプロビジョンする
+2. Herokuにアプリを作成して、`Heroku Postgres`と`Heroku connect`をプロビジョンする
 
 ```sh
 $ heroku create <app name>
