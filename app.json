@@ -1,0 +1,14 @@
+{
+    "name": "CMS on Heroku",
+    "description": "Simple CMS on Heroku",
+    "website": "https://github.com/NEOPA-Inc/cms-heroku-demo",
+    "repository": "https://github.com/NEOPA-Inc/cms-heroku-demo",
+    "keywords": ["cms", "nodejs", "heroku", "salesforce"],
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        },{
+            "plan": "heroku-connect"
+        }
+    ] 
+}
