@@ -1,0 +1,45 @@
+{
+    "mappings": [
+      {
+        "object_name": "information__c",
+        "config": {
+          "access": "read_only",
+          "sf_notify_enabled": true,
+          "sf_polling_seconds": 600,
+          "sf_max_daily_api_calls": 30000,
+          "fields": {
+            "CreatedDate": {},
+            "Id": {},
+            "IsDeleted": {},
+            "Name": {},
+            "SystemModstamp": {},
+            "OwnerId": {},
+            "detail__c": {}
+          },
+          "indexes": {
+            "Id": {
+              "unique": true
+            },
+            "SystemModstamp": {
+              "unique": false
+            }
+          },
+          "applied_at": "2018-01-25T08:06:41.768142Z"
+        }
+      }
+    ],
+    "connection": {
+      "app_name": "connecttestapp",
+      "organization_id": "",
+      "exported_at": "2018-11-28T08:11:33.091466+00:00",
+      "features": {
+        "poll_db_no_merge": true,
+        "poll_external_ids": false,
+        "rest_count_only": false
+      },
+      "api_version": "41.0",
+      "name": "connecttestapp:DATABASE_URL:public",
+      "logplex_log_enabled": false
+    },
+    "version": 1
+  }
