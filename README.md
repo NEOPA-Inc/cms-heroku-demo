@@ -1,6 +1,8 @@
 CMS on Heroku Demo app
 ====
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NEOPA-Inc/cms-heroku-demo)  
+
 ## 概要
 SalesforceをCMSの管理画面として利用するデモアプリです。
 
@@ -14,14 +16,9 @@ SalesforceをCMSの管理画面として利用するデモアプリです。
 
 ## セットアップ方法
 
-1. Salesforceにカスタムオブジェクトを作成する
+1. Salesforceの非管理パッケージをインストールする
 
-下記のURLからSalesforceにパッケージをインストールする
-
->組織にパッケージをインストールするには、次の URL を使用します:
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000005EqKj
-
->注: Sandbox 組織にインストールする場合は、URL の最初の部分を http://test.salesforce.com に置き換える必要があります。
+[こちら](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t7F000005EqKj)からSalesforceにパッケージをインストールします
 
 2. Herokuにアプリを作成して、`Heroku Postgres`と`Heroku connect`をプロビジョンする
 
@@ -32,8 +29,10 @@ $ heroku addons:create herokuconnect --app <app name>
 ```
 
 3. Heroku connectを設定する  
- 1.で作成したSalesforce組織に対して、接続設定を行い、`information__c`をマッピングする。  
+ 1.で作成したSalesforce組織に対して接続設定を行い、`information__c`をマッピングする。  
  ※接続設定時にDBのスキーマ名は`public`にする
+ ※Heroku connectの設定は[こちら](https://raw.githubusercontent.com/NEOPA-Inc/cms-heroku-demo/master/crm-heroku-demo_public.json)
+
 
 4. Herokuにデプロイする
 ```sh
