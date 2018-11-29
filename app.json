@@ -8,7 +8,7 @@
         {
             "plan": "heroku-postgresql"
         },{
-            "plan": "heroku-connect"
+            "plan": "herokuconnect"
         }
     ] 
 }
