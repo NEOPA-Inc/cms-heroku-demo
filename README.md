@@ -1,13 +1,10 @@
-CMS on Heroku Demo app
+CMS on Heroku
 ====
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NEOPA-Inc/cms-heroku-demo)  
 
 ## 概要
-SalesforceをCMSの管理画面として利用するデモアプリです。
-
-記事やニュースなどのWebコンテンツがHeroku上で稼働するWebサイトに即座に反映される仕組みです。
-コンテンツの管理はすべてSalesforceで行います。
+Salesforceでコンテンツ管理（CMS）が簡単にできるWebアプリです。記事やニュースなどのコンテンツをSalesforceで編集すると、Heroku上で稼働するWebアプリに即座に反映されます。Salesforceのデータを用いた会員アプリやECサイトを構築する際に、簡単なCMS機能が必要となることがよくあります。このアプリはそのようなケースに簡単にCMSを導入することができます。
 
 ## 必要な環境
 
@@ -31,7 +28,7 @@ $ heroku addons:create herokuconnect --app <app name>
 ### 3.Heroku connectを設定する  
  1.で作成したSalesforce組織に対して接続設定を行い、`information__c`をマッピングする。  
  ※接続設定時にDBのスキーマ名は`public`にする
- ※Heroku connectの設定は[こちら](https://raw.githubusercontent.com/NEOPA-Inc/cms-heroku-demo/master/crm-heroku-demo_public.json)
+ ※Heroku connectの設定は[こちら](https://raw.githubusercontent.com/NEOPA-Inc/cms-heroku-demo/master/cms-heroku-demo_public.json)
 
 
 ### 4.Herokuにデプロイする
